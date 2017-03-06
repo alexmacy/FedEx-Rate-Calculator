@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<title>FedEx Rate Calculator Settings</title>
+
+<link rel="stylesheet" href="../css/bootstrap.3.3.7.min.css">
+<link rel="stylesheet" href="../css/fedex-rate.css">
+
+<div class="container" style="margin-top: 10%">
+  <p>
+    <button class="btn btn-default" 
+            onclick="closeSecondWindow('close-second-window')"          
+            >Close Settings</button>
+  </p>
+  <p>
+    -
+  </p>
+  <!-- Access to certain settings can be controlled by making the buttons inactive -->
+  <p>
+    <button class="btn btn-default" 
+            onclick="navigate('settings/credentials.html')"
+            >FedEx Credentials</button>
+  </p>
+  <p>
+    <button class="btn btn-default" 
+            onclick="navigate('settings/box-specs.html')"
+            >Box Specs</button>
+  </p>
+  <p>
+    <button class="btn btn-default" 
+            onclick="navigate('settings/shipping-states.html')"
+            >Shipping States</button>
+  </p>
+  <p>
+    <button class="btn btn-default" 
+            onclick="navigate('settings/shipping-days.html')"
+            >Shipping Days</button>
+  </p>
+</div>
+
+<script src="js/settings-main.js"></script>

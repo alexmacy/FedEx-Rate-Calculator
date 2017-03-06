@@ -1,0 +1,17 @@
+{
+  "name": "fedEx-rate-calculator",
+  "productName": "FedEx Rate Calculator",
+  "version": "1.0.0",
+  "description": "A tool for getting live FedEx rate quotes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Alex Macy",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "electron": "~1.4.15",
+    "d3": "~4.0.0",
+    "shipping-fedex": "~0.1.5"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<title>FedEx Shipping Days</title>
+
+<link rel="stylesheet" href="../css/bootstrap.3.3.7.min.css">
+<link rel="stylesheet" href="../css/fedex-rate.css">
+
+<div class="container">
+  <div class="row">
+    <button class="btn btn-default" 
+            onclick="navigate('./settings/settings-main.html')"
+            >Return to Settings</button>
+  </div>
+  <div class="row">
+    <b>Shipping Days:</b>
+    <div id="days"></div>
+  </div>
+  <div class="row">
+    <button class="btn btn-default" 
+            onclick="updateSettings()"
+            >Update Shipping Days</button>
+  </div>
+
+</div>
+
+<script src="js/shipping-days.js"></script>

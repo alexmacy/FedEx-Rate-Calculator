@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<title>FedEx Shipping Box Specs</title>
+
+<link rel="stylesheet" href="../css/bootstrap.3.3.7.min.css">
+<link rel="stylesheet" href="../css/fedex-rate.css">
+
+<div class="container">
+  <div class="row">
+    <button class="btn btn-default" 
+            onclick="navigate('./settings/settings-main.html')"
+            >Return to Settings</button>
+  </div>
+  <div class="row">
+    <b>Box Specs</b>
+    (by bottle count)
+    <table id="box-specs">
+      <thead>
+        <th style="width:200px">Bottle Count</th>
+        <th style="width:150px">Weight</th>
+        <th style="width:150px">Length</th>
+        <th style="width:150px">Width</th>
+        <th style="width:150px">Height</th>
+        <th style="width:150px">Handling</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="row">
+    <button class="btn btn-default" 
+            onclick="updateSettings()">Update Box Specs</button>
+  </div>
+</div>
+
+<script src="js/box-specs.js"></script>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<title>FedEx Rate Calculator</title>
+
+<link rel="stylesheet" href="../css/bootstrap.3.3.7.min.css">
+<link rel="stylesheet" href="../css/fedex-rate.css">
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6 form-group">
+      <label for="address">Street Address:</label>
+      <input  id="address" 
+              placeholder="Street Address" 
+              class="form-control"/>
+    </div>
+    <div class="col-sm-6 form-group">
+      <label for="city">City:</label>
+      <input  id="city" 
+              placeholder="City" 
+              class="form-control"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 form-group">
+      <label for="state">State:</label>
+      <select id="state" class="form-control"></select>
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="zip">Zip Code:</label>
+      <input  id="zip" 
+              class="form-control" 
+              placeholder="Zip Code"/>
+    </div>
+    <div class="col-sm-4 form-group">
+      <label for="shipDate">Shipping Date:</label>
+      <input  type="date"
+              id="shipDate"
+              name="shipDate" 
+              class="form-control" 
+              style="line-height: 1rem;"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <span class="col-sm-4 form-group">
+      <select id="bc" class="form-control"></select>
+    </span>
+    <div class="col-sm-4 form-group">
+      <label>
+        <input  type="checkbox" 
+                id="alcoholToggle" 
+                checked/>
+        Contains Alcohol
+      </label>
+    </div>
+    <button id="search-button" 
+            class="col-sm-4 btn btn-primary btn-sm" 
+            onclick="rateCalc()">Get Rates</button>
+  </div>
+
+</div>
+
+<div id="message" style="display: none;">loading...</div>
+<table id="rate_table" class="table"></table>
+<script src="js/index.js"></script>
