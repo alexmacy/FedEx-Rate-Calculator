@@ -50,7 +50,7 @@ function rateCalc(shipmentDetails) {
       zip: document.getElementById('zip').value,
       bc: document.getElementById('bc').value,
       shipDate: document.getElementById('shipDate').value,
-      alcohol: d3.select('#alcoholToggle').property('checked')
+      alcohol: document.getElementById('alcoholToggle').checked
     }
   }
 

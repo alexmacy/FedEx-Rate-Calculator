@@ -1,32 +1,40 @@
 const fedexAPI = require('shipping-fedex');
 const fs = require('fs');
 const {ipcRenderer} = require('electron')
+const Dialogs = require('dialogs');
+
+const dialogs = Dialogs(opts={});
 
 const credentials = getJSON('credentials.json')
 
 if (credentials.Key.length < 1) {
-  alert("Please provide a FedEx API key")
-  return navigate('settings/credentials.html')
+  dialogs.alert("Please provide a FedEx API key", function () {
+    return navigate('settings/credentials.html')
+  })
 }
 
 if (credentials.Password.length < 1) {
-  alert("Please provide a FedEx API password")
-  return navigate('settings/credentials.html')
+  dialogs.alert("Please provide a FedEx API password", function () {
+    return navigate('settings/credentials.html')
+  })
 }
 
 if (credentials.Account.length < 1) {
-  alert("Please provide a FedEx account number")
-  return navigate('settings/credentials.html')
+  dialogs.alert("Please provide a FedEx account number", function () {
+    return navigate('settings/credentials.html')
+  })
 }
 
 if (credentials.Meter.length < 1) {
-  alert("Please provide a FedEx meter number")
-  return navigate('settings/credentials.html')
+  dialogs.alert("Please provide a FedEx meter number", function () {
+    return navigate('settings/credentials.html')
+  })
 }
 
 if (credentials.Origination_ZIP_Code.length < 1) {
-  alert("Please provide an origination zip code")
-  return navigate('settings/credentials.html')
+  dialogs.alert("Please provide an origination zip code", function () {
+    return navigate('settings/credentials.html')
+  })
 }
 
 const fedex = new fedexAPI({

@@ -10,7 +10,16 @@
             onclick="navigate('./settings/settings-main.html')"
             >Return to Settings</button>
   </div>
-  <div class="row">
+  <div id="instructions">
+    <p style="text-align: left">
+      Administrator login required to change these settings.
+    </p>
+    <button class="btn btn-default" 
+            onclick="loginDialog(loadSettings)">Login</button>    
+  </div>
+  <div  id="box-specs"
+        class="row" 
+        style="display: none;">
     <b>Box Specs</b>
     (by bottle count)
     <table id="box-specs">
@@ -26,7 +35,9 @@
     </table>
   </div>
   <div class="row">
-    <button class="btn btn-default" 
+    <button id="update-button"
+            class="btn btn-default" 
+            style="display: none;" 
             onclick="updateSettings()">Update Box Specs</button>
   </div>
 </div>

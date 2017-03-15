@@ -10,8 +10,9 @@
   "author": "Alex Macy",
   "license": "CC0-1.0",
   "dependencies": {
-    "electron": "~1.4.15",
     "d3": "~4.0.0",
+    "dialogs": "~1.1.18",
+    "electron": "~1.4.15",
     "shipping-fedex": "~0.1.5"
   }
 }
