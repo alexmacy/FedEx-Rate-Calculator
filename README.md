@@ -20,7 +20,7 @@ From your command line:
 # Clone this repository
 git clone https://github.com/alexmacy/fedex-rate-calculator
 # Go into the repository
-cd electron-quick-start
+cd fedex-rate-calculator
 # Install dependencies
 npm install
 ```
