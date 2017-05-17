@@ -11,6 +11,7 @@ This was designed specifically for retail shipping of wine, but the settings all
 
 
 ##Installation
+
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. While this can be run directly from there, it is intended be a standalone desktop application, packaged using [electron-packager](https://www.npmjs.com/package/electron-packager).
 
 ----
