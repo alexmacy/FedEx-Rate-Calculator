@@ -6,7 +6,7 @@ This is a relatively simple tool for getting live rate quotes for FedEx shipment
 This was designed specifically for retail shipping of wine, but the settings allow for a great deal of customization, including:
   - Custom price margin
   - Box specifics like dimensions, weights, and packaging/handling charges
-  - States that you are allowed to ship to while conforming to restrictions on shipping aclohol across state lines
+  - States that you are allowed to ship to while conforming to restrictions on shipping alcohol across state lines
   - Days of the week that available for you to ship (ex. closed on Mondays, etc.)
 
 
